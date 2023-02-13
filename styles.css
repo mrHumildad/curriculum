@@ -1,0 +1,49 @@
+:root {
+    --light: #87CEFA;
+    --dark: #5B7FC5;
+    --life: #3A8DEF;
+    --white:#eadede;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: var(--white);
+    text-align: center;
+    border: 3px solid black;
+    
+    
+}
+a {
+    text-decoration: none;
+}
+#presentation {
+    width: 300px;
+}
+.portrait {
+    height: 150px;
+    width:  150px;
+    border-radius: 50%;
+    background-color: var(--life);
+}
+#skills {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: var(--life);
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
