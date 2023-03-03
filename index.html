@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
     <title>Max Notaro's CV</title>
+    <link rel="shortcut icon" href="/img/icons8-usuario-masculino-en-círculo-24.png" type="image/x-icon">
 </head>
 <body>
     <div id="header">
@@ -17,9 +18,9 @@
         
     </div>
 
-    <div id="presentation" class="section">
-        <div class="portrait"></div>
-        <p id="presText">
+    <div id="presentation" class="flex">
+        <div id="portrait" ></div>
+        <p id="presText" >
             I am an <b>Italian</b> cityzen, born <span id="years"></span> years <span id="days">100</span> days ago
             in <b>France</b>, living in <b>Barcelona</b> since 2006. <br>
             I restarted several times my professional career, due to external circumstances and my natural curiosity and <b>autodidact</b> attitude. <br>
@@ -27,8 +28,8 @@
         </p>
     </div>
     <h2>Skills</h2>
-    <div id="skills">
-        <div class="lang">
+    <div id="skills" class="flex">
+        <div id="lang" class="flChild3">
             <h3>Languages</h3>
             <ul>
                 <li>English &#9733 &#9733 &#9733 &#9733 &#9734</li>
@@ -36,10 +37,11 @@
                 <li>Italian &#9733 &#9733 &#9733 &#9733 &#9733 </li>
                 <li>French &#9733 &#9733 &#9733 &#9734 &#9734</li>
                 <li>Catalan &#9733 &#9733 &#9733 &#9734 &#9734</li>
+                <li>Salentino &#9733 &#9733 &#9733 &#9734 &#9734</li>
             </ul>
         </div>
        
-        <div class="coder">
+        <div id="coder" class="flChild3">
             <h3>Tech</h3>
             <ul>
                 <li>GNU-<b>Linux</b> with shell</li>
@@ -51,7 +53,7 @@
         </div>
 
 
-        <div class="creative">
+        <div id="creative" class="flChild3">
             <h3>Creative</h3>
             <ul>
                 <li>Videomaking (scripting, <b>directing</b>, lighting)</li>
@@ -63,7 +65,7 @@
     </div>
 
     <h2>Bio</h2>
-    <div class="bio">
+    <div id="bio" >
         <div class="study">
             <h3>Studies</h3>
             <ul>
@@ -93,8 +95,8 @@
     </div>
 
     <h2>Notes</h2>
-    <div class="notes">
-        <div id="data">
+    <div id="notes" class="flex">
+        <div id="data" class="flChild3">
             <h3>Data</h3>
             <ul>
                 <li>{birth: ["13/01/78", "Annecy(F)"],</li>
@@ -104,7 +106,7 @@
                 <li>SS: "081180830677"}</li>
             </ul>
         </div>
-        <div id="links">
+        <div id="links" class="flChild3">
             <h3>Links</h3>
             <ul>
                 <li><a href="https://github.com/mrHumildad">My GitHub</a></li>
@@ -112,18 +114,20 @@
                 <li><a href="http://cslash.com">cSlash/</a></li>
             </ul>
         </div>
-        <div id="tags">
+        <div id="tags" class="flChild3">
             <h3>Tags</h3>
             <li>#autodidact</li>
             <li>#polyglot</li>
             <li>#ethicHacking</li>
             <li>#lateralThinking</li>
+            <li>#indieGames</li>
         </div>
     </div>
+    <br>
 
     <footer>
         <a href="mailto:nghizzah@gmail.com" id="mail">MAIL</a>
-        <button class="pdf">PDF version</button>
+        <a id="pdf">PDF version</a>
         <a href="tel:+34667895921" id="tel">TEL</a>
     </footer>
     <script src="easterEggs.js"></script>
