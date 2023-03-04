@@ -1,0 +1,36 @@
+:root {
+    --white : #ffffff;
+}
+.noprint {
+    display: none;
+}
+@page { size: auto;  margin: 5mm; }
+body {
+    font-size: 94%;
+    border: 0;
+    }
+.flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flChild3 {
+        width: 32%;
+    }
+    #portrait {
+        margin: auto;
+}
+h1, h2 {
+    margin-top: 0.2%;
+    margin-bottom: 0.2%;
+    background-color: var(--white);
+    color: var(--dark);
+}
+footer {
+    display: none;
+}
+li {
+    padding-bottom: 5px;
+}
+#presText {
+    border: 0;
+}

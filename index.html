@@ -8,20 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
+    <!-- print style overrides -->
+    <link rel="stylesheet" media="print" href="print.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
     <title>Max Notaro's CV</title>
     <link rel="shortcut icon" href="/img/icons8-usuario-masculino-en-círculo-24.png" type="image/x-icon">
 </head>
 <body>
     <div id="header">
-        <h1>Maximilien<br>Notaro</b></h1>
+        <h1>Maximilien<br class="noprint"><span class="print"> </span> Notaro</b></h1>
         
     </div>
 
     <div id="presentation" class="flex">
         <div id="portrait" ></div>
         <p id="presText" >
-            I am an <b>Italian</b> cityzen, born <span id="years"></span> years <span id="days">100</span> days ago
+            I am an <b>Italian</b> cityzen, born 
+            <span id="years"></span>
+             years 
+             <span id="days" class="noprint">100
+             </span>
+             <span class="noprint"> days
+
+             </span>
+              ago
             in <b>France</b>, living in <b>Barcelona</b> since 2006. <br>
             I restarted several times my professional career, due to external circumstances and my natural curiosity and <b>autodidact</b> attitude. <br>
             Last time the "covid facts" made me leave the world of hostelry and rediscover my ancient passion for coding and begun to explore <b>Metaverse</b>.
@@ -49,6 +59,7 @@
                 <li><b>JavaScript</b> and Node.js</li>
                 <li>Databases, <b>Mysql</b> and Workbench</li>
                 <li><b>API</b>, scripting and Postman</li>
+                <li>App testing (<b>Selenium</b>)</li>
             </ul>
         </div>
 
@@ -127,9 +138,9 @@
 
     <footer>
         <a href="mailto:nghizzah@gmail.com" id="mail">MAIL</a>
-        <a id="pdf">PDF version</a>
+        <a id="pdf" href="#" onclick="window.print();return false;">PDF version</a>
         <a href="tel:+34667895921" id="tel">TEL</a>
     </footer>
-    <script src="easterEggs.js"></script>
+    <script src="easterEggs.js"></script>   
 </body>
 </html>

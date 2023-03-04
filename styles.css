@@ -4,6 +4,9 @@
     --life: #3A8DEF;
     --white:#eadede;
 }
+.print {
+    display: none;
+}
 body {  
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -31,7 +34,7 @@ li {
 h1 {
     color: var(--white);
     background-color: var(--dark);
-    
+    margin-top: 2%;
 }
 h2 {
     color: var(--white);
