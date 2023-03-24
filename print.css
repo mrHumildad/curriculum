@@ -4,9 +4,12 @@
 .noprint {
     display: none;
 }
+.print {
+    display: inline;
+}
 @page { size: auto;  margin: 5mm; }
 body {
-    font-size: 94%;
+    font-size: 92%;
     border: 0;
     }
 .flex {
