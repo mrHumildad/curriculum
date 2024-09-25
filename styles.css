@@ -3,18 +3,23 @@
     --dark: #5B7FC5;
     --life: #3A8DEF;
     --white:#eadede;
+    --grey: #eadedea3;
 }
 .print {
     display: none;
 }
+.accent {
+    font-weight: 700;
+}
 body {  
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     text-decoration: none;
     background-color: var(--white);
     text-align: center;
-    border: 3px solid black; 
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 a {
     text-decoration: none;
@@ -33,7 +38,7 @@ li {
 }
 h1 {
     color: var(--white);
-    background-color: var(--dark);
+    background-color: var(--life);
     margin-top: 2%;
 }
 h2 {
@@ -50,24 +55,50 @@ h3 {
 ul {
     margin-top: 5px;  
 }
+#imilien {
+    color: var(--grey);
+}
 #presentation {
-    margin: auto; 
+    margin: auto;
+    
+}
+#links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding : 18px;
+    max-width: 30%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 70%;
+}
+
+#tech-skills {
+    text-align: left;
+}
+
+.other-skill-title {
+    font-weight: 800;
+}
+
+.skill-title {
+    text-decoration: underline;
+    text-decoration-color: var(--life);
+    text-decoration-thickness: 4px;
+    font-weight: 700;
 }
 #presText {
+    background-color: var(--grey);
     border: 4px solid var(--life);
     border-radius: 5%;
     padding : 18px;
-    max-width: 70%;
+    max-width: 60%;
     margin: auto;
 }
-#portrait {
-    margin: auto;
-    margin-bottom: 15px;
-    height: 150px;
-    width:  150px;
-    border-radius: 50%;
-    background-color: var(--life);
-}
+
 #skills {
     margin: 0;
 }
@@ -100,7 +131,12 @@ footer {
     .flChild3 {
         width: 32%;
     }
-    #portrait {
-        margin: auto;
+    #presentation {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    #links {
+        margin: 0;
     }
 }
