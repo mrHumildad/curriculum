@@ -20,9 +20,7 @@ body {
     .flChild3 {
         width: 32%;
     }
-    #portrait {
-        margin: auto;
-}
+    
 h1, h2 {
     margin-top: 0.2%;
     margin-bottom: 0.2%;
@@ -31,10 +29,11 @@ h1, h2 {
 }
 #presentation {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 18px;
 }
-footer, #links{
+footer{
     display: none;
 }
 li {
