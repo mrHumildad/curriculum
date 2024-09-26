@@ -7,9 +7,10 @@
 .print {
     display: inline;
 }
+
 @page { size: auto;  margin: 5mm; }
 body {
-    font-size: 92%;
+    font-size: 12px;
     border: 0;
     }
 .flex {
@@ -28,7 +29,12 @@ h1, h2 {
     background-color: var(--white);
     color: var(--dark);
 }
-footer {
+#presentation {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+footer, #links{
     display: none;
 }
 li {
