@@ -106,15 +106,10 @@ ul {
 #skills {
     margin: 0;
 }
-/* #mail, #tel, #pdf, #traducer{
-    color: var(--white);
-    font-weight: bold;
-    height: 8vh;
 
-} */
 footer {
     width: 80%;
-    height: 10vh;
+    height: 5vh;
     background-color: var(--life);
     bottom: 0;
     left: 50%;
@@ -139,7 +134,7 @@ footer {
     }
 }
 footer img {
-    height: 6vh; /* Adjust the height as needed */
+    height: 3.5vh; /* Adjust the height as needed */
     width: auto; /* Maintain aspect ratio */
     display: block;
 }
@@ -151,12 +146,10 @@ footer img {
     align-items: center; /* Center images vertically in anchor tags */
 }
 
-
-
-
 @media only screen and (min-width: 700px) {
     body {
         font-size: 120%;
+        background-color: ffffff;
     }
     .flex {
         display: flex;
@@ -180,11 +173,13 @@ footer img {
         justify-content: space-between;
         transform: scale(120%);
         transform: translate(-50%, -0%);
-        border-radius: 15%; 
     }
     #links {
         margin: 0;
         max-width: 60%;
         padding: 18px;
+    }
+    .work ul:last-child {
+        margin-bottom: 10vh;
     }
 }
