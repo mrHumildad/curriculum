@@ -39,12 +39,15 @@ li {
 h1 {
     color: var(--white);
     background-color: var(--life);
-    margin-top: 2%;
+    margin-top: 2vh;
+    border-radius: 15%; 
 }
 h2 {
     color: var(--white);
     background-color: var(--dark);
+    border-radius: 15%; 
 }
+
 h3 {
     margin-bottom: 8px;
     text-decoration: underline;
@@ -93,7 +96,6 @@ ul {
     font-weight: 700;
 }
 #presText {
-    background-color: var(--grey);
     border: 4px solid var(--life);
     border-radius: 5%;
     padding : 18px;
@@ -104,22 +106,39 @@ ul {
 #skills {
     margin: 0;
 }
-#mail, #tel, #pdf{
+/* #mail, #tel, #pdf, #traducer{
     color: var(--white);
     font-weight: bold;
-    padding: 3px 13px 3px 13px;
-}
+    height: 8vh;
+
+} */
 footer {
-    width: 90%;
+    width: 80%;
+    height: 10vh;
     background-color: var(--life);
     bottom: 0;
     left: 50%;
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     transform: translate(-50%, -0%);
     border-radius: 5%; 
 }
+footer img {
+    height: 6vh; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+#mail, #tel, #pdf, #traducer {
+    color: var(--white);
+    font-weight: bold;
+    display: flex; /* Make anchor tags flex containers */
+    align-items: center; /* Center images vertically in anchor tags */
+}
+
+
 
 
 @media only screen and (min-width: 700px) {
@@ -137,7 +156,19 @@ footer {
         flex-direction: row;
         align-items: center;
         gap: 18px;
-     }
+    }
+    footer {
+        width: 50%;
+        background-color: var(--life);
+        bottom: 0;
+        left: 50%;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        transform: scale(120%);
+        transform: translate(-50%, -0%);
+        border-radius: 15%; 
+    }
     #links {
         margin: 0;
         max-width: 60%;

@@ -1,11 +1,35 @@
 :root {
     --white : #ffffff;
+    --black: #000000;
+}
+h1, h2 {
+    color: var(--black);
+    background-color: var(--white);
+}
+.skill-title, h3 {
+    text-decoration-color: var(--black);
+    text-decoration-thickness: 2px;
 }
 .noprint {
     display: none;
 }
+#imilien {
+    color: var(--black);
+    opacity: 50%;
+}
+
+
 .print {
     display: inline;
+}
+#linksQR {
+    display: flex;
+}
+#links {
+   align-items: baseline; 
+}
+#QR-img {
+    width: 4cm;
 }
 
 @page { size: auto;  margin: 5mm; }
@@ -14,22 +38,20 @@ body {
     border: 0;
     }
 .flex {
-        display: flex;
-        justify-content: space-between;
-    }
-    .flChild3 {
-        width: 32%;
-    }
+    display: flex;
+    justify-content: space-between;
+}
+.flChild3 {
+    width: 32%;
+}
     
 h1, h2 {
     margin-top: 0.2%;
     margin-bottom: 0.2%;
-    background-color: var(--white);
-    color: var(--dark);
 }
 #presentation {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 18px;
 }
@@ -40,5 +62,6 @@ li {
     padding-bottom: 5px;
 }
 #presText {
-    border: 0;
+    border: 3px;
+    width: 80%s;
 }
