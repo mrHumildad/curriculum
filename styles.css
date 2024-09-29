@@ -123,7 +123,20 @@ footer {
     justify-content: space-around;
     align-items: center;
     transform: translate(-50%, -0%);
-    border-radius: 5%; 
+    border-radius: 20% 20% 0 0;
+    opacity: 0;
+    animation: slideUp 2s forwards; /* Animation with duration */
+    animation-delay: 2s;
+}
+@keyframes slideUp {
+    from {
+        transform: translate(-50%, 100%); /* Start off-screen */
+        opacity: 0; /* Start as invisible */
+    }
+    to {
+        transform: translate(-50%, 0); /* End at its normal position */
+        opacity: 1; /* Make it visible */
+    }
 }
 footer img {
     height: 6vh; /* Adjust the height as needed */
