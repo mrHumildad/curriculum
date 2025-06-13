@@ -32,7 +32,7 @@ function getBeforeQuestionMark(str) {
 }
 
 // Function to return the string from the first occurrence of '?' to the end
-function getAfterQuestionMark(str) {
+/* function getAfterQuestionMark(str) {
     const questionIndex = str.indexOf('?'); // Find the position of the '?'
     
     if (questionIndex === -1) {
@@ -40,7 +40,7 @@ function getAfterQuestionMark(str) {
     }
     
     return str.substring(questionIndex); // Return the string from '?' to the end
-}
+} */
 const swapLang = () => {
     const URL = window.location.href;
     lang = document.documentElement.lang;
@@ -56,4 +56,6 @@ const swapLang = () => {
 		window.location.href = cleanURL + suffix[index] + x; */
 }
 langButt.addEventListener('click', swapLang)
+
+
 
